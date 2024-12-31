@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddOrEditAccount">
+
+    <LinearLayout
+        android:id="@+id/ll_addAccount_etsHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_addAccount_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_addAccount_name"
+                style="@style/TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_name_colon" />
+
+            <EditText
+                android:id="@+id/et_AccountTitle"
+                style="@style/InputMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="@string/word_title"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textStyle="italic"
+                tools:text="Name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_addAccount_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_addAccount_currency"
+                style="@style/TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_currency_colon" />
+
+            <Spinner
+                android:id="@+id/spinnerCurrency"
+                style="@style/InputMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/word_code"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_dbFileName"
+            style="@style/InputMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            tools:text="File name: titleAccount.db" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_delete"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/word_delete"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_addAccount_etsHolder" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/word_cancel"
+        app:layout_constraintEnd_toStartOf="@+id/btn_saveAccount"
+        app:layout_constraintTop_toBottomOf="@+id/ll_addAccount_etsHolder" />
+
+    <Button
+        android:id="@+id/btn_saveAccount"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/word_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_addAccount_etsHolder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

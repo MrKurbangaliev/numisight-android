@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PaymentDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/paymentDetails_toolbar"
+        style="@style/ExpenseTrackerToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_categoryIcon_paymentDetails"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:importantForAccessibility="no"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentDetails_toolbar" />
+
+    <TextView
+        android:id="@+id/tv_paymentDetails_category"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/iv_categoryIcon_paymentDetails"
+        app:layout_constraintStart_toStartOf="@+id/iv_categoryIcon_paymentDetails"
+        app:layout_constraintTop_toBottomOf="@+id/iv_categoryIcon_paymentDetails"
+        tools:text="Category" />
+
+    <TextView
+        android:id="@+id/tv_paymentDetails_date"
+        style="@style/TextSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_paymentDetails_category"
+        tools:text="payment date" />
+
+    <TextView
+        android:id="@+id/tv_paymentDetails_amount"
+        style="@style/TextLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_paymentDetails_date"
+        tools:text="$100" />
+
+    <TextView
+        android:id="@+id/tv_paymentDetails_type"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:text="Type: Bank / Cash" />
+
+    <TextView
+        android:id="@+id/tv_PaymentDetails_balance"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_paymentDetails_type"
+        tools:text="Balance: $200" />
+
+    <TextView
+        android:id="@+id/tv_paymentDetails_description"
+        style="@style/TextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/tv_paymentDetails_amount"
+        app:layout_constraintStart_toStartOf="@+id/tv_paymentDetails_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_paymentDetails_amount"
+        tools:text="Description" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_paymentDetails_description" />
+</androidx.constraintlayout.widget.ConstraintLayout>

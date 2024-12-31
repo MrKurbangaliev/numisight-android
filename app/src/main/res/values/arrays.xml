@@ -1,0 +1,42 @@
+<resources>
+    <string-array name="categories_array">
+        <item>Food</item>
+        <item>Coffee</item>
+        <item>Tithe</item>
+        <item>Tips</item>
+        <item>Water</item>
+        <item>Medicine</item>
+        <item>Hygiene products</item>
+        <item>Car</item>
+        <item>Bike</item>
+        <item>Rent</item>
+        <item>Furniture</item>
+        <item>Pet care</item>
+        <item>Books</item>
+        <item>Education</item>
+        <item>Commission</item>
+        <item>Public utilities</item>
+        <item>Balance correction</item>
+        <item>Services</item>
+        <item>Gifts</item>
+        <item>Entertainment</item>
+        <item>Haircut</item>
+        <item>Subscriptions</item>
+        <item>Transport</item>
+        <item>Tools</item>
+        <item>Salary</item>
+        <item>Financial help</item>
+        <item>Sales</item>
+        <item>Currency exchange</item>
+        <item>Same as description</item>
+    </string-array>
+
+    <string-array name="currency_codes">
+        <item>UAH</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>PLN</item>
+        <item>GBP</item>
+        <item>Other</item>
+    </string-array>
+</resources>
