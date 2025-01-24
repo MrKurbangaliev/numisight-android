@@ -1,1 +1,3 @@
 /build
+/src/androidTest/java/com/iremia/app/numisight/ExampleInstrumentedTest.java
+/src/test/java/com/iremia/app/numisight/ExampleUnitTest.java

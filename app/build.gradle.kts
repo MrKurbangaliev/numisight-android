@@ -37,7 +37,6 @@ android {
 
 dependencies {
 
-    implementation(libs.realm.gradle.plugin)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
